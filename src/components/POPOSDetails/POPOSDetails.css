@@ -48,7 +48,7 @@
 @media only screen and (max-width: 767px) {
   .POPOSDetails .POPOSDetails-image {
     order: 99;
-    width: 100%;
+    width: auto;
     height: auto;
     margin-bottom: 1em;
   }
