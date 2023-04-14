@@ -4,8 +4,17 @@
 	border: 1px solid;
     border-radius: 0.5em;
 	font-size: 1rem;
+
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #4682b4;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
 .RandomSpace:hover {
     cursor: pointer;
+	background-color: #335d73;
 }
