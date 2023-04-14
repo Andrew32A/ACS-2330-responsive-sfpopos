@@ -1,14 +1,15 @@
-import './App.css';
 import { Outlet } from 'react-router-dom'
-
 import Title from './Title/Title';
 import Footer from './Footer/Footer';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Title />
-      <Outlet />
+      <div className='outletWrapper'>
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
