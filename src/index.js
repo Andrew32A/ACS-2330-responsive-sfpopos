@@ -6,6 +6,7 @@ import POPOSList from './components/POPOSList/POPOSList';
 import About from './components/About/About';
 import reportWebVitals from './reportWebVitals';
 import POPOSDetails from './components/POPOSDetails/POPOSDetails'
+import Newsletter from './components/Newsletter/Newsletter';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 const rootElement = document.getElementById('root');
@@ -17,6 +18,7 @@ root.render(
       <Route path="/" element={<App />}>
         <Route path="/" element={<POPOSList />} />
         <Route path="about" element={<About />} />
+        <Route path="newsletter" element={<Newsletter />} />
         <Route path="/details/:id" element={<POPOSDetails />} />
       </Route>
     </Routes>

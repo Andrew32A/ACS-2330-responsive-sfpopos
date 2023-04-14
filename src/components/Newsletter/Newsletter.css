@@ -1,0 +1,49 @@
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-form label {
+    font-weight: bold;
+  }
+  
+  .newsletter-form input[type="text"],
+  .newsletter-form input[type="email"],
+  .newsletter-form input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .newsletter-form input[type="checkbox"] {
+    margin-bottom: 0;
+  }
+  
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .checkbox-wrapper label {
+    margin-left: 8px;
+  }
+  
+  .newsletter-form button[type="submit"] {
+    background-color: #4682B4;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button[type="submit"]:hover {
+    background-color: #31608F;
+  }
+  
