@@ -10,7 +10,10 @@ function Newsletter() {
 
   return (
     <div>
-      <form>
+      <form className='newsletterForm'>
+        <div>
+          <h1 className='newsletterTitle'>Get the latest updates!</h1>
+        </div>
         <div>
           <label htmlFor="username" style={{textAlign: "right"}}>Username: </label>
           <input type="text" id="username" className="username" style={{textAlign: "left"}} />
@@ -29,7 +32,7 @@ function Newsletter() {
           />
           <label htmlFor="subscribe">Subscribe to our newsletter</label>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className='newsletterSubmit'>Submit</button>
       </form>
     </div>
   );
