@@ -2,32 +2,30 @@ import React, { useState } from 'react';
 import './Newsletter.css';
 
 function Newsletter() {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(true);
 
   const handleCheckboxChange = () => {
-    setIsChecked(isChecked);
+    setIsChecked(!isChecked);
   };
 
   return (
     <div>
       <form className='newsletterForm'>
-        <div>
-          <h1 className='newsletterTitle'>Get the latest updates!</h1>
+        <h1 className='newsletterTitle'>Get the latest updates!</h1>
+        <div className='usernameWrapper'>
+          <label htmlFor="username">Username</label>
+          <input type="text" id="username" className="username" placeholder='Enter here' />
         </div>
-        <div>
-          <label htmlFor="username" style={{textAlign: "right"}}>Username: </label>
-          <input type="text" id="username" className="username" style={{textAlign: "left"}} />
+        <div className='passwordWrapper'>
+          <label htmlFor="password">Password</label>
+          <input type="password" id="password" className="password" placeholder='Enter here' />
         </div>
-        <div>
-          <label htmlFor="password" style={{textAlign: "right"}}>Password: </label>
-          <input type="password" id="password" className="password" style={{textAlign: "left"}} />
-        </div>
-        <div className="checkbox-wrapper">
+        <div className="checkboxWrapper">
           <input
             type="checkbox"
             id="subscribe"
             className="subscribe"
-            checked={true}
+            checked={isChecked}
             onChange={handleCheckboxChange}
           />
           <label htmlFor="subscribe">Subscribe to our newsletter</label>
