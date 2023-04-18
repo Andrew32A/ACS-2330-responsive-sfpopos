@@ -9,7 +9,7 @@ function Newsletter() {
   };
 
   return (
-    <div>
+    <section>
       <form className='newsletterForm'>
         <h1 className='newsletterTitle'>Get the latest updates!</h1>
         <div className='usernameWrapper'>
@@ -32,7 +32,7 @@ function Newsletter() {
         </div>
         <button type="submit" className='newsletterSubmit'>Submit</button>
       </form>
-    </div>
+    </section>
   );
 }
 

@@ -2,9 +2,9 @@ import "./Footer.css"
 
 function Footer(props) {
     return (
-        <div className="footer">
+        <footer className="footer">
             <p>Andrew Alsing Copyright 2023</p>
-        </div>
+        </footer>
     )
 }
 
