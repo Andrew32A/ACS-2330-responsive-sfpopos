@@ -8,6 +8,7 @@ function RandomSpace() {
   return (
 	<button 
         className="RandomSpace"
+        aria-label="Show me a random space button"
         onClick={(e) => {
                 const id = Math.floor(Math.random() * data.length)
                 navigate(`/details/${id}`)
