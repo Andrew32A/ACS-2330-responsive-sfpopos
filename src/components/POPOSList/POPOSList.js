@@ -21,25 +21,27 @@ function POPOSList() {
       })
 
     return (
-        <div>
-            <div className="formWrapper">
+        <main>
+            <section className="formWrapper" aria-label="Search">
                 <form>
                     <input
-                    value={query}
-                    placeholder="search"
-                    onChange={(e) => setQuery(e.target.value)}
+                        id="search"
+                        value={query}
+                        placeholder="Search"
+                        onChange={(e) => setQuery(e.target.value)}
                     />
                     <button type="submit">Submit</button>
                 </form>
-            </div>
-            <div className="POPOSList">
+            </section>
+            <div className="POPOSList" role="list">
                 {spaces}
             </div>
-        </div>
+        </main>
     )
 }
 
 export default POPOSList
+
 
 // ***** manually inputting data for each example: *****
 
