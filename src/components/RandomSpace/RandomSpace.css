@@ -7,7 +7,7 @@
 
 	margin-top: 20px;
 	padding: 10px 20px;
-	background-color: #4682b4;
+	background-color: #315B7D;
 	color: #fff;
 	border-radius: 5px;
 	cursor: pointer;
@@ -16,5 +16,5 @@
 
 .RandomSpace:hover {
 	cursor: pointer;
-	background-color: #335d73;
+	background-color: #4682B4;
 }
