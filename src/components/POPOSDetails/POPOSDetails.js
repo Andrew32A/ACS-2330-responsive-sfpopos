@@ -12,7 +12,7 @@ function POPOSDetails(props) {
   return (
     <section className="POPOSDetails" role="article">
       <div className="POPOSDetails-image">
-        <img src={`${process.env.PUBLIC_URL}/images/${images[0]}`} alt={title} />
+        <img src={`${process.env.PUBLIC_URL}/images/${images[0]}`} alt={ title } />
       </div>
       <div className="POPOSDetails-info">
         <p className="POPOSDetails-title" role="heading" aria-level="1">{ title }</p>
@@ -20,11 +20,11 @@ function POPOSDetails(props) {
         <p className="POPOSDetails-hours">{ hours }</p>
         <ul className="POPOSDetails-features" aria-label="Features">
           {features.map((feature, index) => (
-            <li key={index}>{feature}</li>
+            <li key={ index }>{ feature }</li>
           ))}
         </ul>
         <p className="POPOSDetails-geo">{ geo.lat } { geo.lon }</p>
-        <POPOSFeatureList features={features}/>
+        <POPOSFeatureList features={ features }/>
       </div>
     </section>
   );

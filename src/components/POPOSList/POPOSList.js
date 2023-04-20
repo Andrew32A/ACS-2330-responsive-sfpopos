@@ -16,6 +16,7 @@ function POPOSList() {
             address={address}
             image={images[0]}
             hours={hours}
+            role="listitem"
           />
         )
       })
